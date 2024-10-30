@@ -1,13 +1,11 @@
+@import url("../styles/theme.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer base {
-  :root {
-    --radius: 0.5rem;
+@layer utilities {
+  .btn-primary {
+    @apply bg-primary-gradient py-5 px-24 text-center text-white w-72;
   }
 }
